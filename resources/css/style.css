@@ -193,3 +193,51 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* ------------------------------------- */
+/* FEATURES */
+/* ------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px; 
+}
+
+
+/* ------------------------------------- */
+/* MEALS */
+/* ------------------------------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;    /* Instead of showing one-by-one, show by side */
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /* Image with opacity < 1.0 needs black background to become darker */
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;    /* Ensure window is automatically as wide as a container */
+    height: auto;
+    transform: scale(1.15); /* Upscale picture 115% */
+    transition: transform 0.5s, opacity 0.5s; /* Add a delay */
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
