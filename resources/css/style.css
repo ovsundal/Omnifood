@@ -17,6 +17,7 @@ html {
   font-weight: 300;
   font-size: 20px; /* base size, all other font sizes are relative to this value */
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
