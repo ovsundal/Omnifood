@@ -64,3 +64,18 @@ $(document).ready(function () {
         offset: '50%'
     });
 
+    /* Mobile navi */
+    $('.js--nav-icon').click(function () {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon');
+
+        // does not work because navicon now works differently than in demo
+        nav.slideToggle(200);
+        if(icon.hasClass('mobile-nav-icon')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+    });
